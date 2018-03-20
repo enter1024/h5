@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>H5ComponentBase</title>
+    <!-- 基本的库文件 -->
+    <script src="lib/jquery.js"></script>
+    <script src="lib/jquery-ui.min.js"></script>
+    <script src="lib/jquery.fullPage.js"></script>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        html{
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+<div id="fullpage">
+    <div class="section">第一屏</div>
+    <div class="section">第二屏</div>
+    <div class="section">第三屏</div>
+    <div class="section">第四屏</div>
+</div>
+
+<script>
+    $(function () {
+        $('#fullpage').fullpage({
+            'navigation': false,
+            'sectionsColor': ['#254875', '#00FF00', '#254587', '#695684'],
+            anchors: ['page1', 'page2', 'page3', 'page4'],
+            slidesNavigation: false,
+            controlArrows: false
+        });
+    });
+</script>
+</body>
+</html>
